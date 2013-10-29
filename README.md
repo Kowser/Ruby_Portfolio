@@ -3,7 +3,7 @@ Ruby Portfolio
 ######The following is my work in Ruby, not to be confused with Ruby on Rails
 ######Each program was written to pass the written TDD tests.
 
-These projects were designed to teach a TDD approach, followed by breaking down each problem into manageable code pieces and resolving them one by one until a fully functional piece of software glistened.
+These projects were designed to teach a TDD approach. By breaking down each problem into manageable code pieces and resolving them one by one, a fully functional piece of software emerges.
 
 ######Object-Oriented Ruby -- command line based
 |projects      |Description|
