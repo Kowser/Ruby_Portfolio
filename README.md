@@ -6,7 +6,7 @@ Ruby Portfolio
 These projects were designed to teach a TDD approach. By breaking down each problem into manageable code pieces and resolving them one by one, a fully functional piece of software emerges.
 
 ######Object-Oriented Ruby -- command line based
-|projects      |Description|
+|project       |Description|
 |--------------|-----------|
 |Address Book  |A basic address book.|
 |Tic Tac Toe   |A classic game with the option of computer or 2 player!|
