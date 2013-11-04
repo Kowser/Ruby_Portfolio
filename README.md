@@ -1,17 +1,24 @@
-Ruby Portfolio
+Ruby Portfolio (not on Rails)
 ====================
-######The following is my work in Ruby, not to be confused with Ruby on Rails
-######Each program was written to pass the written TDD tests.
-
-These projects were designed to teach a TDD approach. By breaking down each problem into manageable code pieces and resolving them one by one, a fully functional piece of software emerges.
+A selection of Ruby works developed during my time at Epicodus. There are for more projects than we were able to fully finish, starting a new project almost daily. Pair-Programming & Test Driven Development are the foundational basis of each project.
 
 ######Object-Oriented Ruby -- command line based
 |project       |Description|
 |--------------|-----------|
-|Address Book  |A basic address book.|
+|Address Book  |A very basic address book.|
 |Tic-Tac-Toe   |A classic game with the option of computer or 2 player!|
 |Triangle      |Identifies a triange as scalene, isosceles or equilateral given 3 sides. Will also recognize an impossible triangle.|
 
+######Active Record -- command line based
+|project       |Description|
+|--------------|-----------|
+||**w/o Active Record or RAKEFILE** - Building our own AR methods (think self.all or .save) & working directly in PSQL database!|
+|To Do         |Our customer introductory app into a new language. Requires manual setup of database.
+|Biblioteka    |A terminal for creating new patrons and checking out copies (books,media, etc...) w/o ACTIVE RECORD / RAKEFILE -  Requires manual setup of database.|
+||**w/ Active Record** - Now we can truly appreciate what others have built|
+|Surveyor        |A terminal survey programming allowing one to create surveys, questions in each survey, answers to each question AND get a report of how many users chose an answer for each question. Uses Active Record & Migrations|
+|Calendar Girl  | An event & to do list terminal program allowing one to make start/end dates, times, and list out events any events that occur within the specified range (inc. those that start/end before or after). Uses AR/migrations|
+|Employee Organizer|A terminal program using **polymorphic database relationships** to organize projects & contributions by employee & division. Menu is approximately 80% finished.|
 
 
 ######Basic Ruby
