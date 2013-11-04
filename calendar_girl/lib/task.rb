@@ -1,0 +1,3 @@
+class Task < ActiveRecord::Base
+  has_many :notes, :as => :notable, dependent: :destroy
+end
