@@ -1,4 +1,6 @@
 class Contact
+  attr_reader :full_name, :phone, :address, :email, :type, :first_name, :last_name
+
   def initialize(first_name, last_name)
     @first_name = first_name
     @last_name = last_name
@@ -29,9 +31,5 @@ class Contact
   def define_type(contact_type)
     type_list = {1=> "Family", 2=> "Business"}
     @type = type_list[contact_type]
-  end
-
-
-  attr_reader :full_name, :phone, :address, :email, :type, :first_name, :last_name
-  
+  end  
 end

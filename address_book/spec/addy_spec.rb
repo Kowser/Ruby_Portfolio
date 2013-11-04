@@ -34,7 +34,7 @@ describe AddressBook do
     new_addressbook.list.length.should eq 1
   end
 
-  it 'deletes the a contact from address book by name' do
+  it 'deletes a contact from address book by name' do
     new_addressbook = AddressBook.new
     contact = Contact.new("Alex", "Gross")
     new_addressbook.add_contact(contact)
@@ -57,20 +57,3 @@ describe AddressBook do
     addressbook.search_list("smart").should eq ["Ken UnSmart"]
   end
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

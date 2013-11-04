@@ -9,12 +9,12 @@ class Game
   end
 
   def change_player
-    @current_player == "X"? @current_player = "O" : @current_player = "X"
+    @current_player == "X" ? @current_player = "O" : @current_player = "X"
     puts "\e[H\e[2J"
   end
 
-  def mark_square(position)
-    case position.downcase
+  def mark_square(move)
+    case move
       when "a"
         @board[0][0] == "_" ? @board[0][0] = @current_player : false 
       when "b"
@@ -37,24 +37,27 @@ class Game
     end
   end
 
-  def over
+  def over?
     over = false
+
+    if @board[0][0] + @board[1][1] + @board[2][2] == @current_player * 3 ||
+        @board[2][0] + @board[1][1] + @board[0][2] == @current_player * 3
+      over = true
+    end
+
     (0..2).each do |i|
       if @board[i][0] + @board[i][1] + @board[i][2] == @current_player * 3
         over = true
       elsif @board[0][i] + @board[1][i] + @board[2][i] == @current_player * 3
         over = true
-      elsif @board[0][0] + @board[1][1] + @board[2][2] == @current_player * 3
-        over = true
-      elsif @board[0][2] + @board[1][1] + @board[2][0] == @current_player * 3
-        over = true
       end
     end
+
     over
   end
 
-  def not_cats_game
-    @board.flatten.include?("_")
+  def cats_game?
+    !@board.flatten.include?("_")
   end
 
   def winner

@@ -4,8 +4,7 @@ require './lib/board.rb'
 @computer_game = false
 @computer_play = false
 
-
-def board_menu
+def draw_board
   puts "\e[H\e[2J"
   @game.board.each_with_index do |row,index|
     puts "\t#{row[0]} | #{row[1]} | #{row[2]}"
@@ -22,7 +21,7 @@ end
 def human_turn
   @computer_play = true
   puts "Player #{@game.current_player}'s turn. Please make a selection (a-i) to mark your square."
-  player_turn(gets.chomp)
+  player_turn(gets.chomp.downcase)
 end
 
 def computer_turn
@@ -31,21 +30,9 @@ def computer_turn
 end
 
 def player_turn(move)
-  if @game.mark_square(move) != false
-    if !@game.over && @game.not_cats_game
-      @game.change_player
-      board_menu
-    elsif !@game.not_cats_game
-      puts "\e[H\e[2J"
-      @game.board.each_with_index do |row,index|
-        puts "\t#{row[0]} | #{row[1]} | #{row[2]}"
-        puts "\t----------" if index < 2
-      end
-      puts "\n\nMan you two are good. Nobody won. Cat's game suckas."
-      puts "\n\n\nPress any key to return to the main menu."
-      gets.chomp
-      menu
-    else
+  if @game.mark_square(move)
+
+    if @game.over?
       puts "\e[H\e[2J"
       @game.board.each_with_index do |row,index|
         puts "\t#{row[0]} | #{row[1]} | #{row[2]}"
@@ -56,7 +43,21 @@ def player_turn(move)
       puts "\n\n\nPress any key to return to the main menu."
       gets.chomp
       menu
+    elsif @game.cats_game?
+      puts "\e[H\e[2J"
+      @game.board.each_with_index do |row,index|
+        puts "\t#{row[0]} | #{row[1]} | #{row[2]}"
+        puts "\t----------" if index < 2
+      end
+      puts "\n\nMan you two are good. Nobody won. Cat's game."
+      puts "\n\n\nPress any key to return to the main menu."
+      gets.chomp
+      menu
+    else
+      @game.change_player
+      draw_board   
     end
+      
   else puts "HAL: I'm sorry Player #{@game.current_player} I can't do that."
     human_turn
   end
@@ -72,13 +73,16 @@ def menu
   puts "                Press 'X' to exit."
   puts ""
   case gets.chomp.downcase
-    when 'p' then @game = Game.new
-      board_menu
-    when 'c' then @game = Game.new
+    when 'p'
+      @game = Game.new
+      draw_board
+    when 'c'
+      @game = Game.new
       @computer_game = true
       @computer_play = false
-      board_menu
-    when 'x' then puts "\e[H\e[2J"
+      draw_board
+    when 'x'
+      puts "\e[H\e[2J"
       exit
     else 'Invalid Selection.'
   end

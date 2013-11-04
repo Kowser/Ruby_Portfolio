@@ -47,7 +47,7 @@ describe Game do
   it "determines if the game is over" do
     game = Game.new
     game.mark_square("a")
-    game.over.should eq false
+    game.over?.should eq false
   end
 
   it "determines if the game is over" do
@@ -55,7 +55,7 @@ describe Game do
     game.mark_square("a")
     game.mark_square("b")
     game.mark_square("c")
-    game.over.should eq true
+    game.over?.should eq true
   end
 
   it "determines the winner" do
@@ -66,7 +66,7 @@ describe Game do
     game.winner.should eq "Player X is the winner!"
   end
 
-  it "returns true if it is not a cat's game" do
+  it "returns false if it is not a cat's game" do
     game = Game.new
     game.mark_square("a")
     game.mark_square("b")
@@ -76,10 +76,10 @@ describe Game do
     game.mark_square("f")
     game.mark_square("h")
     game.mark_square("i")
-    game.not_cats_game.should eq true
+    game.cats_game?.should eq false
   end
 
-  it 'returns false if the it is a cat\'s game' do
+  it 'returns true if the it is a cat\'s game' do
     game = Game.new
     game.mark_square("a")
     game.mark_square("b")
@@ -90,7 +90,7 @@ describe Game do
     game.mark_square("g")
     game.mark_square("h")
     game.mark_square("i")
-    game.not_cats_game.should eq false
+    game.cats_game?.should eq true
   end
 
   it 'has a computer turn that plays a move' do

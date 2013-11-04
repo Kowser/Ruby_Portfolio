@@ -19,12 +19,12 @@ describe 'leap_year' do
   end
 end
 
-describe 'is_positive_integer' do
-  it 'returns false if year is positive' do
-    is_positive_integer(-1986).should eq false
+describe 'is_valid_integer' do
+  it 'returns false if year is a negative number' do
+    is_valid_integer(-1986).should eq false
   end
 
   it 'returns false if the year is not an integer' do
-    is_positive_integer(987.654321).should eq false
+    is_valid_integer(987.654321).should eq false
   end
 end

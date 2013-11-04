@@ -1,6 +1,3 @@
-# AddressBook.new('foo').methods.sort - Object.new.methods
- # SHOWS ALL METHODS in INSTANCE
-
 class AddressBook
   def initialize
     @list = []

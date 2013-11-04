@@ -7,7 +7,7 @@ describe 'PIG LATIN' do
       pig_word('ensign').should eq 'ensignay'
     end
 
-    it ' translates a word starting with a "qu"' do
+    it 'translates a word starting with a "qu"' do
       pig_word('quintessential').should eq 'intessentialquay'
     end
 

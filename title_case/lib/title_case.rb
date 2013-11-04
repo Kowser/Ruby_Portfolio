@@ -1,7 +1,7 @@
 def title_case(string)
   new_string = []
-  string.split.each do |word|
-    if is_exception(word) == true && string.index(word) != 0
+  string.downcase.split.each do |word|
+    if is_exception(word) == true && string.index(word) > 0
       new_string << word
     else
       new_string << word[0].upcase + word[1..-1]

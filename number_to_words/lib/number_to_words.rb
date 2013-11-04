@@ -40,8 +40,8 @@ $scales = {
  5 => 'quadrillion',
  6 => 'quintillion',
  7 => 'sextillion',
- 8 => 'octillion',
- 9 => 'nonillion'
+ 8 => 'septillion',
+ 9 => 'octillion'
 }
 
 $answer = []

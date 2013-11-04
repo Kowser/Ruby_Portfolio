@@ -52,7 +52,7 @@ describe 'numbers_to_words' do
     $i = 1
   end
 
-  it 'converts ANY number less than a septillion into words' do
+  it 'converts ANY number less than a nonillion into words' do
     numbers_to_words(9999999)
     $answer.reverse.join(" ").should eq 'nine million nine hundred ninety nine thousand nine hundred ninety nine'
     $answer = []
