@@ -23,3 +23,4 @@ These projects were designed to teach a TDD approach. By breaking down each prob
 |Number to Words       |Converts a number up to 27 integers long into its written form.|
 |Pig Latin     |anslatesTray asesphray intoay igpay atinlay (Translates phrases into pig latin).|
 |Title Case    |Convert sentences in any case into proper title case, ignoring standard words ('a', 'and', 'to', etc..)|
+|Triangle      |Evaluates three sides of a triangle to determine its type.|
