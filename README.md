@@ -1,5 +1,4 @@
 
-
 Ruby Portfolio (not on Rails)
 ====================
 
@@ -23,7 +22,7 @@ A selection of Ruby works developed during my time at Epicodus. There are for mo
 ||**w/ Active Record** - Now we can truly appreciate what others have built|
 |Surveyor        |A terminal survey programming allowing one to create surveys, questions in each survey, answers to each question AND get a report of how many users chose an answer for each question. Uses Active Record & Migrations|
 |Calendar Girl  | An event & to do list terminal program allowing one to make start/end dates, times, and list out events any events that occur within the specified range (inc. those that start/end before or after). Uses AR/migrations|
-|Employee Organizer|A terminal program using **polymorphic database relationships** to organize projects & contributions by employee & division. Menu is approximately 80% finished.|
+|Employee Organizer|A terminal program using **polymorphic database relationships** to organize projects & contributions by employee & division.|
 
 
 ######Basic Ruby
