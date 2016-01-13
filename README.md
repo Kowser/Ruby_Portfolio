@@ -5,14 +5,14 @@
 <h1 align='center'>Ruby (no Rails) Portfolio</h1>
 A selection of Ruby works developed during my time at Epicodus. There are for more projects than we were able to fully finish, starting a new project almost daily. Pair-Programming & Test Driven Development are the foundational basis of each project.
 
-###Object-Oriented Ruby -- command line based
+##Object-Oriented Ruby -- command line based
 |project       |Description|
 |--------------|-----------|
 |Address Book  |A very basic address book.|
 |Tic-Tac-Toe   |A classic game with the option of computer or 2 player!|
 |Triangle      |Identifies a triange as scalene, isosceles or equilateral given 3 sides. Will also recognize an impossible triangle.|
 
-###Active Record -- command line based
+##Active Record -- command line based
 |project       |Description|
 |--------------|-----------|
 ||**w/o Active Record or RAKEFILE** - Building our own AR methods (think self.all or .save) & working directly in Psql database|
@@ -24,7 +24,7 @@ A selection of Ruby works developed during my time at Epicodus. There are for mo
 |Employee Organizer|A terminal program using **polymorphic database relationships** to organize projects & contributions by employee & division.|
 
 
-####asic Ruby
+##Basic Ruby
 |Project       |Description|
 |--------------|-----------|
 |Factorial     |A quick tool to factor any number up to 170.|
