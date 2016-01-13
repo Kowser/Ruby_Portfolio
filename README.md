@@ -2,6 +2,7 @@
 <img align='right' src='https://github.com/Kowser/Ruby_Portfolio/blob/master/no_rails.png' width='150px'>
 <br>
 <br>
+<br>
 <h1 align='center'>Ruby (no Rails) Portfolio</h1>
 A selection of Ruby works developed during my time at Epicodus. There are for more projects than we were able to fully finish, starting a new project almost daily. Pair-Programming & Test Driven Development are the foundational basis of each project.
 
