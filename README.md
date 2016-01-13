@@ -1,5 +1,5 @@
-<img align='left' src='https://github.com/Kowser/JavaScript_Portfolio/blob/master/js.png' width='175px'>
-<img align='right' src='https://github.com/Kowser/JavaScript_Portfolio/blob/master/js.png' width='175px'>
+<img align='left' src='https://github.com/Kowser/Ruby_Portfolio/blob/master/ruby.png' width='175px'>
+<img align='right' src='https://github.com/Kowser/Ruby_Portfolio/blob/master/no_rails.png' width='175px'>
 <h1 align='center'>Ruby (no Rails) Portfolio</h1>
 <br>
 <br>
