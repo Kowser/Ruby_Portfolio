@@ -1,8 +1,9 @@
-Ruby Portfolio (not on Rails)
-====================
-
-![alt text](http://qph.is.quoracdn.net/main-thumb-t-884-50-ioPAnreV3p2eNCH8smmQtOIgUufJ1W1E.jpeg "Ruby Image")
-
+<img align='left' src='https://github.com/Kowser/JavaScript_Portfolio/blob/master/js.png' width='175px'>
+<img align='right' src='https://github.com/Kowser/JavaScript_Portfolio/blob/master/js.png' width='175px'>
+<h1 align='center'>Ruby (no Rails) Portfolio</h1>
+<br>
+<br>
+<br>
 A selection of Ruby works developed during my time at Epicodus. There are for more projects than we were able to fully finish, starting a new project almost daily. Pair-Programming & Test Driven Development are the foundational basis of each project.
 
 ######Object-Oriented Ruby -- command line based
