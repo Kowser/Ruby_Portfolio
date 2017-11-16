@@ -17,7 +17,7 @@ A selection of Ruby works developed during my time at Epicodus. There are for mo
 |Project|Description|
 |--------------|--------------------------|
 ||**w/o Active Record or RAKEFILE**<br>Building our own AR methods (think self.all or .save) & working directly in Psql database|
-|To Do         |Our customer introductory app into a new language. Requires manual setup of database.
+|To Do         |Our customary introductory project into a new language. Requires manual setup of database.
 |Biblioteka    |A terminal for creating new patrons and checking out copies (books,media, etc...) w/o ACTIVE RECORD / RAKEFILE -  Requires manual setup of database.|
 |||
 ||**w/ Active Record**<br>Now we can truly appreciate what others have built|
