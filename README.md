@@ -1,1 +1,1 @@
-<h3>For a project overview please visit the <a href='https://github.com/Kowser/Overview'>Overview Page</a></h3>
+<h3>For a description of each individual project, please visit the <a href='https://github.com/Kowser/Overview'>Overview Page</a>.</h3>
